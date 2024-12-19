@@ -38,7 +38,12 @@ BloxFruitTab:AddButton({ Name = "Kiciahook [Key]",
   Callback = function() 
     loadstring(game:HttpGet("https://raw.githubusercontent.com/kiciahook/kiciahook/refs/heads/main/loader.lua"))()
   end 
-}) --[[ Name = - The name of the button. Callback = - The function of the button. ]] --[[ Name = - The name of the button. Callback = - The function of the button. ]]
+})
+BloxFruitTab:AddButton({ Name = "Kiciahook [Key]", 
+  Callback = function() 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AbstractHub/ScriptHub/refs/heads/Loader/DRAGON-UPDATE"))()
+  end 
+})--[[ Name = - The name of the button. Callback = - The function of the button. ]] --[[ Name = - The name of the button. Callback = - The function of the button. ]]
 
 -- More Tabs and Sections
 
