@@ -147,4 +147,21 @@ NotorietyTab:AddButton({
   end
 })
 
+local PlaneSimTab = Window:MakeTab({ 
+  Name = "Plane Simulator", 
+  Icon = "rbxassetid://4483345998", 
+  PremiumOnly = false 
+})
+
+local Section = PlaneSimTab:AddSection({ 
+  Name = "Plane Simulator Scripts" 
+})
+
+NotorietyTab:AddButton({ 
+  Name = "Infinite Coins and Unlock Robux", 
+  Callback = function() 
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Plane-Simulator-Infinite-Coins-and-Unlock-Robux-24829"))()
+  end
+})
+
 
