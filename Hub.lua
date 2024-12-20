@@ -6,15 +6,32 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main
 
 local Window = OrionLib:MakeWindow({Name = "LycusssHUB", HidePremium = false, SaveConfig = true, ConfigFolder = "LycusHUB"}) --[[ Name = - The name of the UI. HidePremium = - Whether or not the user details shows Premium status or not. SaveConfig = - Toggles the config saving in the UI. ConfigFolder = - The name of the folder where the configs are saved. IntroEnabled = false - Whether or not to show the intro animation. IntroText = - Text to show in the intro animation. IntroIcon = - URL to the image you want to use in the intro animation. Icon = - URL to the image you want displayed on the window. CloseCallback = - Function to execute when the window is closed. ]] 
 
+local HubTab = Window:MakeTab({ 
+  Name = "Universal HUB", 
+  Icon = "rbxassetid://4483345998", 
+  PremiumOnly = false 
+})
+
+local Section = HubTab:AddSection({ 
+  Name = "Universal HUB Scripts" 
+})
+
+HubTab:AddButton({ 
+  Name = "SPEEDY HUB X", 
+  Callback = function() 
+    loadstring(game:HttpGet("https://rawscripts.net/raw/UPD-Fisch-Auto-farm-dupe-caught-and-more-23087"))()
+  end 
+})
+
 local BloxFruitTab = Window:MakeTab({ 
   Name = "Blox Fruit", 
   Icon = "rbxassetid://4483345998", 
   PremiumOnly = false 
-}) --[[ Name = - The name of the tab. Icon = - The icon of the tab. PremiumOnly = - Makes the tab accessible to Sirus Premium users only. ]] 
+})
 
 local Section = BloxFruitTab:AddSection({ 
   Name = "Blox Fruit Scripts" 
-}) --[[ Name = - The name of the section. ]] 
+}) 
 
 OrionLib:MakeNotification({ 
   Name = "LycusssHUB", 
@@ -56,8 +73,8 @@ local FischTab = Window:MakeTab({
 local Section = FischTab:AddSection({ 
   Name = "Fisch Scripts" 
 })
-FischTab:AddButton({ Name = "DUALFLINTLOCK [KEY]", 
+FischTab:AddButton({ Name = "SPEED HUB X", 
   Callback = function() 
     loadstring(game:HttpGet("https://rawscripts.net/raw/UPD-Fisch-Auto-farm-dupe-caught-and-more-23087"))()
-  end 
+  end     
 })
