@@ -32,6 +32,13 @@ HubTab:AddButton({
   end 
 })
 
+HubTab:AddButton({ 
+  Name = "BlueRed Hub V19", 
+  Callback = function() 
+    loadstring(game:HttpGet("https://pastebin.com/raw/e7HqxVav"))()
+  end 
+})
+
 local BloxFruitTab = Window:MakeTab({ 
   Name = "Blox Fruit", 
   Icon = "rbxassetid://4483345998", 
@@ -107,3 +114,54 @@ local BlueLockTab = Window:MakeTab({
 local Section = BlueLockTab:AddSection({ 
   Name = "Blue Lock Scripts" 
 })
+
+local WMayhemTab = Window:MakeTab({ 
+  Name = "Weapon Mayhem", 
+  Icon = "rbxassetid://4483345998", 
+  PremiumOnly = false 
+})
+
+local Section = WMayhemTab:AddSection({ 
+  Name = "Weapon Mayhem Scripts" 
+})
+WMayhemTab:AddButton({ 
+  Name = "Bypass Anticheat", 
+  Callback = function() 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Eeeeeeeeeeerer/Aa/refs/heads/main/WeaponMayhemAntiCheatBypass"))()
+  end
+})
+
+local NotorietyTab = Window:MakeTab({ 
+  Name = "Notoriety | Pay Day", 
+  Icon = "rbxassetid://4483345998", 
+  PremiumOnly = false 
+})
+
+local Section = NotorietyTab:AddSection({ 
+  Name = "Notoriety Scripts" 
+})
+
+NotorietyTab:AddButton({ 
+  Name = "Bypass Anticheat", 
+  Callback = function() 
+    local __namecall; __namecall = hookmetamethod(game, "__namecall", function(self, ...)
+    if not checkcaller() then
+        if getnamecallmethod() == "FireServer" then
+            if self.Name == "Damage" then
+
+                for i = 1, 10 do
+                    __namecall(self, ...)
+                end
+            end
+            if self.Name == "Bullet" then
+                return task.wait(9e9)
+            end
+        end
+    end
+
+    return __namecall(self, ...)
+        end
+  end
+})
+
+
