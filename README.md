@@ -1,2 +1,1 @@
-This script hub us made by Lycusss, Check out his YouTube Channel.
-￼Enter
+This script hub is made by Lycusss, Check out his YouTube Channel.
