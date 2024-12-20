@@ -4,7 +4,7 @@ local player = game.Players.LocalPlayer
 local OrionLib = 
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))() 
 
-local Window = OrionLib:MakeWindow({Name = "LycusssHUB", HidePremium = false, SaveConfig = true, ConfigFolder = "LycusHUB"}) --[[ Name = - The name of the UI. HidePremium = - Whether or not the user details shows Premium status or not. SaveConfig = - Toggles the config saving in the UI. ConfigFolder = - The name of the folder where the configs are saved. IntroEnabled = false - Whether or not to show the intro animation. IntroText = - Text to show in the intro animation. IntroIcon = - URL to the image you want to use in the intro animation. Icon = - URL to the image you want displayed on the window. CloseCallback = - Function to execute when the window is closed. ]] 
+local Window = OrionLib:MakeWindow({Name = "Lycusss HUB | Universal V1", HidePremium = false, SaveConfig = true, ConfigFolder = "LycusHUB"}) --[[ Name = - The name of the UI. HidePremium = - Whether or not the user details shows Premium status or not. SaveConfig = - Toggles the config saving in the UI. ConfigFolder = - The name of the folder where the configs are saved. IntroEnabled = false - Whether or not to show the intro animation. IntroText = - Text to show in the intro animation. IntroIcon = - URL to the image you want to use in the intro animation. Icon = - URL to the image you want displayed on the window. CloseCallback = - Function to execute when the window is closed. ]] 
 
 local HubTab = Window:MakeTab({ 
   Name = "Universal HUB", 
@@ -99,11 +99,11 @@ FischTab:AddButton({ Name = "SPEED HUB X",
 })
 
 local BlueLockTab = Window:MakeTab({ 
-  Name = "Fisch", 
+  Name = "Blue Lock", 
   Icon = "rbxassetid://4483345998", 
   PremiumOnly = false 
 })
 
 local Section = BlueLockTab:AddSection({ 
-  Name = "Fisch Scripts" 
+  Name = "Blue Lock Scripts" 
 })
