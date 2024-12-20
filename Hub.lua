@@ -141,7 +141,7 @@ local Section = NotorietyTab:AddSection({
 })
 
 NotorietyTab:AddButton({ 
-  Name = "Bypass Anticheat", 
+  Name = "Damage Multiplier", 
   Callback = function() 
     loadstring(game:HttpGet("https://pastebin.com/M4WwQEMx"))()
   end
