@@ -12,7 +12,7 @@ local InfoTab = Window:MakeTab({
   PremiumOnly = false 
 })
 
-local Section = HubTab:AddSection({ 
+local Section = InfoTab:AddSection({ 
   Name = "Information and Suggestions" 
 })
 
