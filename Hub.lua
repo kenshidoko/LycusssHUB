@@ -39,9 +39,9 @@ BloxFruitTab:AddButton({ Name = "Kiciahook [Key]",
     loadstring(game:HttpGet("https://raw.githubusercontent.com/kiciahook/kiciahook/refs/heads/main/loader.lua"))()
   end 
 })
-BloxFruitTab:AddButton({ Name = "Kiciahook [Key]", 
+BloxFruitTab:AddButton({ Name = "DUALFLINTLOCK [KEY]", 
   Callback = function() 
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/AbstractHub/ScriptHub/refs/heads/Loader/DRAGON-UPDATE"))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/ThundarZ/Welcome/refs/heads/main/Main/Loader/AllGame.lua'))()
   end 
 })--[[ Name = - The name of the button. Callback = - The function of the button. ]] --[[ Name = - The name of the button. Callback = - The function of the button. ]]
 
@@ -55,4 +55,9 @@ local FischTab = Window:MakeTab({
 
 local Section = FischTab:AddSection({ 
   Name = "Fisch Scripts" 
+})
+FischTab:AddButton({ Name = "DUALFLINTLOCK [KEY]", 
+  Callback = function() 
+    loadstring(game:HttpGet("https://rawscripts.net/raw/UPD-Fisch-Auto-farm-dupe-caught-and-more-23087"))()
+  end 
 })
