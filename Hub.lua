@@ -60,6 +60,11 @@ BloxFruitTab:AddButton({ Name = "DUALFLINTLOCK [KEY]",
   Callback = function() 
     loadstring(game:HttpGet('https://raw.githubusercontent.com/ThundarZ/Welcome/refs/heads/main/Main/Loader/AllGame.lua'))()
   end 
+})
+BloxFruitTab:AddButton({ Name = "Blox Fruit Script 1", 
+  Callback = function() 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/redz-hub9999/Blox-Fruits/refs/heads/main/redz9999.lua"))()
+  end 
 })--[[ Name = - The name of the button. Callback = - The function of the button. ]] --[[ Name = - The name of the button. Callback = - The function of the button. ]]
 
 -- More Tabs and Sections
