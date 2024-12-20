@@ -46,6 +46,11 @@ BloxFruitTab:AddButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))()
   end 
 }) --[[ Name = - The name of the button. Callback = - The function of the button. ]] 
+BloxFruitTab:AddButton({ Name = "REDZ HUB V2", 
+  Callback = function() 
+    loadtring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+  end 
+})
 BloxFruitTab:AddButton({ Name = "Naoki HUB [Key]", 
   Callback = function() 
     loadstring(game:HttpGet("https://naokihub.vercel.app",true))() 
