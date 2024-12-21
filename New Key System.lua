@@ -10,7 +10,7 @@ KeyGuardLibrary.Set({
 })
 
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
-local key = ""
+local key = "8951bb74939c4c2fa879b7cd887b37f2"
 
 local Window = Fluent:CreateWindow({
     Title = "Key System",
