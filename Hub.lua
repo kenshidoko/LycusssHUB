@@ -114,19 +114,26 @@ local Section = BlueLockTab:AddSection({
   Name = "Blue Lock Scripts" 
 })
 
-local WMayhemTab = Window:MakeTab({ 
+BlueLocktab:AddButton({ Name = "Blue Lock Script,
+    Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/SkibidiCen/MainMenu/main/Code"))()
+    end
+})
+
+local ArsenalTab = Window:MakeTab({ 
   Name = "Weapon Mayhem", 
   Icon = "rbxassetid://4483345998", 
   PremiumOnly = false 
 })
 
-local Section = WMayhemTab:AddSection({ 
-  Name = "Weapon Mayhem Scripts" 
+local Section = ArsenalTab:AddSection({ 
+  Name = "Arsenal Scripts" 
 })
-WMayhemTab:AddButton({ 
-  Name = "Bypass Anticheat", 
+
+ArsenalTab:AddButton({ 
+  Name = "Insta Kill", 
   Callback = function() 
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Eeeeeeeeeeerer/Aa/refs/heads/main/WeaponMayhemAntiCheatBypass"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Theyfwdan/Theyfwdan/refs/heads/main/ExpressHubPaidVersion"))()
   end
 })
 
