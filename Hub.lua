@@ -114,14 +114,15 @@ local Section = BlueLockTab:AddSection({
   Name = "Blue Lock Scripts" 
 })
 
-BlueLocktab:AddButton({ Name = "Blue Lock Script",
+BlueLocktab:AddButton({ 
+    Name = "Blue Lock Script",
     Callback = function()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/SkibidiCen/MainMenu/main/Code"))()
     end
 })
 
 local ArsenalTab = Window:MakeTab({ 
-  Name = "Weapon Mayhem", 
+  Name = "Arsenal", 
   Icon = "rbxassetid://4483345998", 
   PremiumOnly = false 
 })
