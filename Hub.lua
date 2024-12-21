@@ -114,7 +114,7 @@ local Section = BlueLockTab:AddSection({
   Name = "Blue Lock Scripts" 
 })
 
-BlueLocktab:AddButton({ Name = "Blue Lock Script,
+BlueLocktab:AddButton({ Name = "Blue Lock Script",
     Callback = function()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/SkibidiCen/MainMenu/main/Code"))()
     end
