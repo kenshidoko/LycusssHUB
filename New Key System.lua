@@ -50,7 +50,7 @@ else
         Title = "Input Key",
         Description = "Insert your key...",
         Default = "",
-        Placeholder = "Enter keyâ€¦",
+        Placeholder = "Enter key",
         Numeric = false,
         Finished = false
     })
