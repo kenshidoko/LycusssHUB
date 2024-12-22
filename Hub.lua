@@ -137,20 +137,20 @@ ArsenalTab:AddButton({
   end
 })
 
-local NotorietyTab = Window:MakeTab({ 
-  Name = "Notoriety | Pay Day", 
+local RivalTab = Window:MakeTab({ 
+  Name = "Rivals", 
   Icon = "rbxassetid://4483345998", 
   PremiumOnly = false 
 })
 
-local Section = NotorietyTab:AddSection({ 
-  Name = "Notoriety Scripts" 
+local Section = RivalTab:AddSection({ 
+  Name = "Rivals" 
 })
 
-NotorietyTab:AddButton({ 
-  Name = "Damage Multiplier", 
+RivalTab:AddButton({ 
+  Name = "8-Bit", 
   Callback = function() 
-    loadstring(game:HttpGet("https://pastebin.com/M4WwQEMx"))()
+    loadstring(game:HttpGet("https://x8-bit.web.app/scripts/rival_c1.lua"))()
   end
 })
 
@@ -164,7 +164,7 @@ local Section = PlaneSimTab:AddSection({
   Name = "Plane Simulator Scripts" 
 })
 
-NotorietyTab:AddButton({ 
+PlaneSimTab:AddButton({ 
   Name = "Infinite Coins and Unlock Robux", 
   Callback = function() 
     loadstring(game:HttpGet("https://rawscripts.net/raw/Plane-Simulator-Infinite-Coins-and-Unlock-Robux-24829"))()
