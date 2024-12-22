@@ -48,7 +48,6 @@ local Checkkey = Tabs.KeySys:AddButton({
            print("Key is valid")
            loadstring(game:HttpGet("https://raw.githubusercontent.com/kenshidoko/LycusssHUB/refs/heads/main/Hub.lua"))()
            gui:Destroy()
-           writefile(),isfile()
         else
            print("Key is invalid")
         end
