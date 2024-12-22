@@ -46,6 +46,7 @@ local Checkkey = Tabs.KeySys:AddButton({
         local response = KeyGuardLibrary.validateDefaultKey(key)
         if response == trueData then
            print("Key is valid")
+           writefile(Directory, InputKey.Value)
            loadstring(game:HttpGet("https://raw.githubusercontent.com/kenshidoko/LycusssHUB/refs/heads/main/Hub.lua"))()
            Window:Destroy()
         else
