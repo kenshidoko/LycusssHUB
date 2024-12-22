@@ -2,6 +2,7 @@ local KeyGuardLibrary = loadstring(game:HttpGet("https://cdn.keyguardian.org/lib
 local trueData = "30e0e53ff4d344de9baf2063562aee4b"
 local falseData = "17c5e881ecb24e578edaf1dd13fa5f18"
 
+
 KeyGuardLibrary.Set({
   publicToken = "ac92238a1e2e4ea5abfa5c40a24ea39b",
   privateToken = "703d745af3114df89b51bad49fdc0a4d",
@@ -47,6 +48,7 @@ local Checkkey = Tabs.KeySys:AddButton({
            print("Key is valid")
            loadstring(game:HttpGet("https://raw.githubusercontent.com/kenshidoko/LycusssHUB/refs/heads/main/Hub.lua"))()
            gui:Destroy()
+           writefile(),isfile()
         else
            print("Key is invalid")
         end
