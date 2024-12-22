@@ -10,6 +10,26 @@ KeyGuardLibrary.Set({
   falseData = falseData,
 })
 
+local Directory = "KeyGuard.txt"
+
+if isfile(Directory) then
+    local storedKey = readfile(Directory)
+    if storedKey and storedKey ~= "" then
+        local verificationStartTime = os.clock()
+
+        local response = KeyGuardLibrary.validateDefaultKey(storedKey)
+        local verificationEndTime = os.clock()
+        local verificationTime = verificationEndTime - verificationStartTime
+        print("Time taken to verify stored key: " .. verificationTime .. " seconds")
+        if response == trueData then
+            print("Saved Key is valid")
+            else
+            print("Saved Key is invalid")
+            delfile(Directory)
+        end
+    end
+else
+
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local key = "8951bb74939c4c2fa879b7cd887b37f2"
 
