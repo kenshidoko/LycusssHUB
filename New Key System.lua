@@ -24,6 +24,7 @@ if isfile(Directory) then
         print("Time taken to verify stored key: " .. verificationTime .. " seconds")
         if response == trueData then
             print("Saved Key is valid")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/kenshidoko/LycusssHUB/refs/heads/main/Hub.lua"))()
             else
             print("Saved Key is invalid")
             delfile(Directory)
