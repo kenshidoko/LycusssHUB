@@ -27,6 +27,7 @@ if isfile(Directory) then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/kenshidoko/LycusssHUB/refs/heads/main/Hub.lua"))()
             else
             print("Saved Key is invalid")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/kenshidoko/LycusssHUB/refs/heads/main/New%20Key%20System.lua"))()
             delfile(Directory)
         end
     end
