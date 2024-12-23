@@ -45,4 +45,3 @@ BloxFruitTab:AddButton({ Name = "Speedy HUB",
     loadstring(game:HttpGet("https://rawscripts.net/raw/UPD-Fisch-Auto-farm-dupe-caught-and-more-23087"))()
   end 
 }) --[[ Name = - The name of the button. Callback = - The function of the button. ]] --[[ Name = - The name of the button. Callback = - The function of the button. ]]
-)
