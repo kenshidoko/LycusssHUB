@@ -1,8 +1,8 @@
 -- Table of Game IDs and their respective functions
 local gameFunctions = {
-    [1234567890] = function()
-        print("Welcome to Game 1! Running Game 1's specific function...")
-        -- Add your custom code for Game 1 here
+    [4483381587] = function()
+        print("Baseplate Game, Activating Infinite Yield")
+        loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Infinite%20Yield.txt"))()
     end,
 
     [9876543210] = function()
