@@ -6,13 +6,18 @@ local gameFunctions = {
     end,
 
     [2753915549] = function()
-        print("Game Detected, Blox Fruit.")
+        print("Game Detected, 1st Island Blox Fruit.")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/kenshidoko/LycusssHUB/refs/heads/main/Lycusss_BloxFruit.lua"))()
     end,
 
-    [1122334455] = function()
-        print("Welcome to Game 3! Running Game 3's specific function...")
-        -- Add your custom code for Game 3 here
+    [4442272183] = function()
+        print("Game Detected, 2nd Island Blox Fruit")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/kenshidoko/LycusssHUB/refs/heads/main/Lycusss_BloxFruit.lua"))()
+    end,
+
+    [7449423635] = function()
+        print("Game Detected, 3rd Island Blox Fruit")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/kenshidoko/LycusssHUB/refs/heads/main/Lycusss_BloxFruit.lua"))()
     end,
 }
 
