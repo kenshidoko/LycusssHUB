@@ -5,9 +5,9 @@ local gameFunctions = {
         loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Infinite%20Yield.txt"))()
     end,
 
-    [9876543210] = function()
-        print("Welcome to Game 2! Running Game 2's specific function...")
-        -- Add your custom code for Game 2 here
+    [2753915549] = function()
+        print("Game Detected, Blox Fruit.")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/kenshidoko/LycusssHUB/refs/heads/main/Lycusss_BloxFruit.lua"))()
     end,
 
     [1122334455] = function()
@@ -30,7 +30,7 @@ local currentGameId = game.PlaceId
 local gameFunction = gameFunctions[currentGameId]
 
 if gameFunction then
-    displayNotification("Game Recognized", "This game is recognized. Running its function.", 5)
+    displayNotification("Game Recognized", "This game is recognized. Running LycusssHUB.", 5)
     gameFunction() -- Call the function for the current game
 else
     displayNotification("Game Not Recognized", "This game is not on the list.", 5)
